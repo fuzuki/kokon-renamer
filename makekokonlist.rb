@@ -35,7 +35,7 @@ def makelist(url,outfile)
 				h["speaker"] = $1
 				/>(.+)</ =~ getsnext(f)
 				/>(.+)</ =~ $1
-				h["file"] = $1 + ".mov"
+				h["file"] = $1.downcase + ".mov"
 				a << h
 			end
 		}
