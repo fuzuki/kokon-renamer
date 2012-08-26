@@ -8,9 +8,10 @@ require 'json'
 
 def kokon_conv(indir,outdir,h)
 	infile = indir + "/"+ h["file"].downcase
+	id = h["id"]
 	title = h["title"]
 	speaker = h["speaker"]
-	newfname = outdir + "/#{speaker}「#{title}」.m4a"
+	newfname = outdir + "/#{id}#{speaker}「#{title}」.m4a"
 
 	if File.exist?(infile)
 		`ffmpeg -i #{infile} #{newfname}`
