@@ -13,5 +13,5 @@ kokon-renamer
  ruby kokon_conb.rb <json> <indir> <outdir>
  <json>:kokon.jsonまたはgozonji.json。makekokonlist.rbで生成
  <indir>:元になるmovファイルのあるディレクトリ
- <outdir>:変換後のファイルを出力するでぃレクトリ
+ <outdir>:変換後のファイルを出力するディレクトリ
 
